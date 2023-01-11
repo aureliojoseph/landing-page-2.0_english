@@ -133,6 +133,15 @@ body {
   justify-items: center;
 }
 
+.grid--4--cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3.8rem;
+  row-gap: 2.8rem;
+  justify-items: center;
+  align-items: baseline;
+}
+
 /* HEADINGS */
 .heading-prime,
 .heading-second,
