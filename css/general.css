@@ -100,7 +100,7 @@ body {
 .container--small {
   max-width: 100rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
+  padding: 0 0 0 2rem;
 }
 
 /* REUSABLE GRID */
@@ -255,7 +255,9 @@ body {
 }
 
 .link-icon:link,
-.link-icon:visited {
+.link-icon:visited,
+.experience-text--link:link,
+.experience-text--link:visited {
   display: inline-block;
   text-decoration: none;
   color: #afafaf;
@@ -268,6 +270,16 @@ body {
 .link-icon:hover,
 .link-icon:active {
   color: #ebebeb;
+}
+
+.experience-text--link:link,
+.experience-text--link:visited {
+  color: #ffffff;
+}
+
+.experience-text--link:hover,
+.experience-text--link:active {
+  color: #737373;
 }
 
 /* HELPER CLASSES */
