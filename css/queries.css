@@ -56,6 +56,14 @@
     padding: 6.4rem 6.4rem 9.6rem 6.4rem;
   }
 
+  .work-content {
+    padding: 1rem;
+  }
+
+  .work-languages {
+    font-size: 1.2rem;
+  }
+
   .grid--3--cols,
   .grid--4--cols {
     column-gap: 3.2rem;
@@ -159,6 +167,18 @@
 
   .section-portfolio {
     padding: 6.4rem 3.2rem 9.6rem 3.2rem;
+  }
+
+  .work-content {
+    padding: 3.2rem;
+  }
+
+  .work-languages {
+    font-size: 1.6rem;
+  }
+
+  .icon-description {
+    font-size: 1.6rem;
   }
 
   .grid--3--cols,
