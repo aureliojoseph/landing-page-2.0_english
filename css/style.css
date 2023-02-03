@@ -89,6 +89,7 @@
 .section-hero {
   background-color: #373737;
   padding: 3.2rem 0 9.6rem 0;
+  height: 100vh;
 }
 
 .hero {
@@ -97,6 +98,12 @@
   margin: 0 auto;
   align-items: center;
   padding: 0 4.8rem;
+}
+
+.hero-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .hero-text {
