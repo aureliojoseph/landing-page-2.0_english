@@ -1,4 +1,4 @@
-/* 
+/*
 
 ###### DESIGN SETTINGS ######
 
@@ -27,9 +27,9 @@
 
 --- 02 COLORS
 
-- Primary: 
+- Primary:
  #373737
- 
+
 - Tints:
 #4b4b4b
 #737373
@@ -40,10 +40,10 @@
 rgba(255, 255, 255, 0.97)
 
 - Greys:
- #fff 
+ #fff
  #646464
  #222
- #000 
+ #000
 
 --- 03 SHADOWS:
  0 0.3rem 2rem rgba(0, 0, 0, 0.35)
@@ -227,6 +227,7 @@ body {
   border-radius: 9px;
   padding: 8px 16px;
   transition: all 0.3s;
+  display: none;
 }
 
 .btn-sec.btn-ptbr:hover,
