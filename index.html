@@ -44,25 +44,46 @@
 			</a>
 			<nav class="main-nav nav-open">
 				<ul class="main-nav-list">
-					<li>
+					<li class="language-eng">
 						<a class="main-nav-link" href="#about">About</a>
 					</li>
-					<li>
+					<li class="language-eng">
 						<a class="main-nav-link" href="#skills">Skill Set</a>
 					</li>
-					<li>
+					<li class="language-eng">
 						<a class="main-nav-link" href="#experience">Experience</a>
 					</li>
-					<li>
+					<li class="language-eng">
 						<a class="main-nav-link" href="#portfolio">My Work</a>
 					</li>
-					<li>
+					<li class="language-eng">
 						<a class="main-nav-link" href="#contact">Contact</a>
+					</li>
+
+					<li class="language-ptbr">
+						<a class="main-nav-link" href="#about">Sobre</a>
+					</li>
+					<li class="language-ptbr">
+						<a class="main-nav-link" href="#skills">Skill Set</a>
+					</li>
+					<li class="language-ptbr">
+						<a class="main-nav-link" href="#experience">Experiência</a>
+					</li>
+					<li class="language-ptbr">
+						<a class="main-nav-link" href="#portfolio">Meu Trabalho</a>
+					</li>
+					<li class="language-ptbr">
+						<a class="main-nav-link" href="#contact">Contato</a>
+					</li>
+
+					<li>
+						<button class="switch-mode main-nav-link" onclick="toggleSwitchMode()"></button>
+					</li>
+					<li>
+						<button class="translate-mode main-nav-link" id="toggle-translate-mode"></button>
 					</li>
 				</ul>
 			</nav>
-
-			<a class="btn btn-sec btn-ptbr" href="https://aureliojoseph.github.io/my-work-ptbr/">pt-br</a>
 
 			<button class="btn-mobile-nav">
 				<ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
@@ -78,9 +99,14 @@
 						<h1 class="heading-prime">
 							Frontend Developer
 						</h1>
-						<div>
+						<div class="language-eng">
 							<a class="btn btn-prime margin-right-small" href="#portfolio">View my Work</a>
 							<a class="btn btn-sec" href="#contact">Get in Touch &darr;</a>
+						</div>
+
+						<div class="language-ptbr">
+							<a class="btn btn-prime margin-right-small" href="#portfolio">Meu Trabalho</a>
+							<a class="btn btn-sec" href="#contact">Meus Contatos &darr;</a>
 						</div>
 					</div>
 
@@ -88,7 +114,7 @@
 						<picture>
 							<img
 								class="hero-img"
-								src="img/selfie.JPG"
+								src="img/profile.jpg"
 								alt="Profile photo of Aurelio Borges"
 							/>
 						</picture>
@@ -98,18 +124,32 @@
 
 			<section class="section-about" id="about">
 				<div class="container--small">
-					<h2 class="heading-secondary">About Me</h2>
-					<p class="about-text">
+					<h2 class="heading-secondary language-eng">About Me</h2>
+					<p class="about-text language-eng">
 						As a software developer with almost 2 years of experience, I have a solid foundation in building responsive websites and web applications. My specialty is in VueJs, where I have 9 months of immersive experience, but I am also proficient in JavaScript, ReactJs, TypeScript, SASS, HTML5, and CSS3. I have experience with component development following Design System Patterns, flow and screen development according to Design specifications using Figma, and applying the Style Guide for VueJs and the B.E.M. methodology. I have used libraries such as Element Plus, Phosphor Icons, Ion Icons, Tailwind CSS, Material Icons, and Bootstrap.
 					</p>
-					<p class="about-text">
+					<p class="about-text language-eng">
 						My experience collaborating with Frontend and Backend, Java, Ruby, Quality Assurance, Design (UI/UX), and Integration teams has given me an overview of the entire development process, where I can learn and contribute at each stage. I have experience working with Git, Github, and Bitbucket, and project management based on agile methodologies and using tools like Slack and JIRA.
 					</p>
-					<p class="about-text">
+					<p class="about-text language-eng">
 						Prior to my career in software development, I worked in Business Management, where I helped people improve their skills and companies achieve their goals. In 2011, I started a retail franchise Business where I coordinated financial and administrative areas, managing 3 stores. My background as a Manager and Consultant has taught me the importance of solid Strategic Planning, which is key to inspiring people with an authentic sense of belonging to organizations and delivering a genuine customer experience that transforms the performance of the company and the product.
 					</p>
-					<p class="about-text">
-						In 2021, I made my career transition to the world of programming, which started as a curiosity and turned into an extraordinary and fascinating universe that I am passionate about. As a developer, my goal is to develop scalable, high-quality products with an excellent user experience that impacts the lives of thousands of people. I am a team player and enjoy working collaboratively, contributing my expertise to the team. I am excited to collaborate with professionals who value excellence, innovation, and teamwork.
+					<p class="about-text language-eng">
+						In 2021, I made my career transition to the world of programming, which started as a curiosity and turned into an extraordinary and fascinating universe that I am passionate about. As a developer, my goal is to deliver scalable, high-quality products with an excellent user experience that impacts the lives of thousands of people. I am a team player and enjoy working collaboratively, contributing my expertise to the team. I am excited to collaborate with professionals who value excellence, innovation, and teamwork.
+					</p>
+
+					<h2 class="heading-secondary language-ptbr">Sobre</h2>
+					<p class="about-text language-ptbr">
+						Como desenvolvedor de softwares com quase 2 anos de experiência, tenho uma base sólida na construção de sites e aplicativos web responsivos. Minha especialidade é em VueJs, com 9 meses de experiência imersiva, mas também sou proficiente em JavaScript, ReactJs, TypeScript, SASS, HTML5 e CSS3. Tenho experiência com desenvolvimento de componentes seguindo Design System Patterns, desenvolvimento de fluxos e telas de acordo com especificações de Design usando Figma, e aplicando o Guia de Estilos para VueJs e a metodologia B.E.M.. Tenho usado bibliotecas como Element Plus, Phosphor Icons, Ion Icons, Tailwind CSS, Material Icons e Bootstrap.
+					</p>
+					<p class="about-text language-ptbr">
+						Minha experiência colaborando com equipes de Frontend e Backend, Java, Ruby, Quality Assurance, Design (UI/UX) e Integração me deu uma visão geral de todo o processo de desenvolvimento, onde posso aprender e contribuir em cada etapa. Tenho experiência trabalhando com Git, Github e Bitbucket, e gerenciamento de projetos baseado em metodologias ágeis e utilizando ferramentas como Slack e JIRA.
+					</p>
+					<p class="about-text language-ptbr">
+						Antes da minha carreira em desenvolvimento de softwares, trabalhei em Gestão de Negócios, onde ajudei pessoas a melhorar suas habilidades e empresas a atingirem seus objetivos. Em 2011, iniciei um negócio de franquia de varejo onde coordenei as áreas financeira e administrativa, gerenciando 3 lojas. Minha formação como Gestor e Consultor me ensinou a importância de um Planejamento Estratégico sólido, fundamental para inspirar nas pessoas um autêntico senso de pertencimento às organizações e entregar uma experiência genuína ao cliente que transforma o desempenho da empresa e do produto.
+					</p>
+					<p class="about-text language-ptbr">
+						Em 2021, fiz minha transição de carreira para o mundo da programação, que começou como uma curiosidade e se transformou em um universo extraordinário e fascinante pelo qual sou apaixonado. Como desenvolvedor, meu objetivo é entregar produtos escaláveis e de alta qualidade com uma excelente experiência do usuário que impacte a vida de milhares de pessoas. Sou um team player e gosto de trabalhar de forma colaborativa, contribuindo com minha experiência para a equipe. Fico contente em colaborar com profissionais que valorizam a excelência, inovação e trabalho em equipe.
 					</p>
 				</div>
 			</section>
@@ -123,20 +163,30 @@
 					<div class="center-text">
 						<h3 class="heading-tertiary">Hard Skills</h3>
 						<ul class="skills-list">
-							<li class="list-item">JavaScript | VueJs | ReactJs | TypeScript</li>
-							<li class="list-item">HTML5 | CSS3 | SASS | Tailwind CSS | Bootstrap</li>
-							<li class="list-item">Design System Patterns | B.E.M.</li>
+							<li class="list-item">JavaScript &middot; VueJs &middot; ReactJs &middot; TypeScript</li>
+							<li class="list-item">HTML5 &middot; CSS3 &middot; SASS &middot; Tailwind CSS &middot; Bootstrap</li>
+							<li class="list-item">Design System Patterns &middot; B.E.M.</li>
 							<li class="list-item">
-								Git, Github and Bitbucket | Jira | Slack
+								Git, Github and Bitbucket &middot; Jira &middot; Slack
 							</li>
-							<li class="list-item">
-								Agile Methodologies &mdash; SCRUM
+							<li class="list-item language-eng">
+								Agile Methodologies &middot; SCRUM
 							</li>
-							<li class="list-item">
+							<li class="list-item language-eng">
 								Strategic Planning
 							</li>
-							<li class="list-item">
+							<li class="list-item language-eng">
 								Analysis of Scenarios and Decision Making
+							</li>
+
+							<li class="list-item language-ptbr">
+								Metodologias Ágeis &middot; SCRUM
+							</li>
+							<li class="list-item language-ptbr">
+								Planejamento Estratégico
+							</li>
+							<li class="list-item language-ptbr">
+								Análise de Cenários e Tomada de Decisões
 							</li>
 						</ul>
 					</div>
@@ -144,11 +194,17 @@
 					<div class="center-text">
 						<h3 class="heading-tertiary center-text">Soft Skills</h3>
 						<ul class="skills-list">
-							<li class="list-item">Organization</li>
-							<li class="list-item">Communication</li>
-							<li class="list-item">Management</li>
-							<li class="list-item">Leadership</li>
-							<li class="list-item">Teamwork</li>
+							<li class="list-item language-eng">Organization</li>
+							<li class="list-item language-eng">Communication</li>
+							<li class="list-item language-eng">Management</li>
+							<li class="list-item language-eng">Leadership</li>
+							<li class="list-item language-eng">Teamwork</li>
+
+							<li class="list-item language-ptbr">Organização</li>
+							<li class="list-item language-ptbr">Comunicação</li>
+							<li class="list-item language-ptbr">Gestão</li>
+							<li class="list-item language-ptbr">Liderança</li>
+							<li class="list-item language-ptbr">Trabalho em Equipe</li>
 						</ul>
 					</div>
 				</div>
@@ -156,25 +212,33 @@
 
 			<section class="section-experience" id="experience">
 				<div class="container--small">
-					<h2 class="secondary-heading">Experience</h2>
+					<h2 class="secondary-heading language-eng">Experience</h2>
+
+					<h2 class="secondary-heading language-ptbr">Experiência</h2>
+
 					<hr />
-					<h3 class="tertiary-heading">Careers</h3>
+
+					<h3 class="tertiary-heading language-eng">Careers</h3>
+
+					<h3 class="tertiary-heading language-ptbr">Carreira</h3>
 				</div>
 
-				<div class="career-box container--small grid grid--2--cols grid-row-small">
+				<div class="career-box container--small grid grid-row-small">
 					<div class="career-title">
 						<h4 class="quaternary-heading">Freelancer</h4>
-						<span class="career-sub-heading">Oct 2021 &mdash; Present</span>
+						<span class="career-sub-heading language-eng">Oct 2021 &mdash; Present</span>
+
+						<span class="career-sub-heading language-ptbr">Out 2021 &mdash; Presente</span>
 					</div>
-					<div class="career-text">
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Freelance Frontend Developer, building fully responsive websites and web applications:
 						</p>
 						<p class="experience-text">
-							&mdash; I built Food Apps as final projects for HTML&CSS and VueJs courses.
+							&mdash; I built two Food Apps as final projects for HTML&CSS and VueJs courses.
 						</p>
 						<p class="experience-text">
-							&mdash; I developed Portfolio Landing Pages, a Music Player, a few Games and a Habit Tracker. I work with the frameworks VueJs and ReactJs, libraries such as
+							&mdash; I developed Portfolio Landing Pages, a Music Player, a couple of Games, a Habit Tracker and a Pokedex. I work with the frameworks VueJs and ReactJs, libraries such as
 							<a class="experience-text--link" href="https://element-plus.org/en-US/" rel="noopener" target="_blank">
 								Element Plus
 							</a>
@@ -200,11 +264,48 @@
 						<p class="icon-description">Remote, Brazil</p>
 					</div>
 
-					<div class="career-title">
-						<h4 class="quaternary-heading">Frontend Developer</h4>
-						<span class="career-sub-heading">Aug 2022 &mdash; Mar 2023</span>
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Desenvolvedor frontend freelancer, desenvolvendo sites aplicações web totalmente responsivos:
+						</p>
+						<p class="experience-text">
+							&mdash; Desenvolvi dois Food Apps como projetos finais para cursos de HTML & CSS e VueJs.
+						</p>
+						<p class="experience-text">
+							&mdash; Desenvolvi Landing Pages de Portfolio, um Music Player, alguns Jogos, um Rastreador de Hábitos e um Pokedex. Trabalho com os frameworks VueJs e ReactJs, bibliotecas como
+							<a class="experience-text--link" href="https://element-plus.org/en-US/" rel="noopener" target="_blank">
+								Element Plus
+							</a>
+							,
+							<a class="experience-text--link" href="https://phosphoricons.com/" rel="noopener" target="_blank">
+								Phosphor Icons
+							</a>
+							e
+							<a class="experience-text--link" href="https://tailwindcss.com/" rel="noopener" target="_blank">
+								Tailwind CSS
+							</a>
+							, e estruturas de backend e bancos de dados como
+							<a class="experience-text--link" href="https://nodejs.org/en/" rel="noopener" target="_blank">
+								NodeJs
+							</a>
+							e
+							<a class="experience-text--link" href="https://www.prisma.io/" rel="noopener" target="_blank">
+								Prisma ORM
+							</a>
+							.
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">Remoto, Brasil</p>
 					</div>
-					<div class="career-text">
+
+					<div class="career-title">
+						<h4 class="quaternary-heading language-eng">Frontend Developer</h4>
+						<span class="career-sub-heading language-eng">Aug 2022 &mdash; Mar 2023</span>
+
+						<h4 class="quaternary-heading language-ptbr">Desenvolvedor Frontend</h4>
+						<span class="career-sub-heading language-ptbr">Ago 2022 &mdash; Mar 2023</span>
+					</div>
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Worked with the frontend team on the most recent additions and releases of Cilia's products and services, as well as collaborating with the Java, Ruby, QA, Design (UI/UX) and Integration teams:
 						</p>
@@ -232,13 +333,58 @@
 							</a>
 							.
 						</p>
-					<p class="experience-text">
-						&mdash; Throughout the second half of 2022 until March 2023, I worked on maintaining and improving legacy code and applying new features to Cilia's main products, as well as building an existing product, refactoring the frontend entirely using VueJs. It was challenging and exciting to rewrite in a different framework, learning daily not only from legacy code, but new knowledge in TypeScript and SASS. The most interesting thing about this project was the creation and componentization of the system in VueJs, and how the use of the framework positively changes the way of creating components and thinking about the application in a structured way and directed to the business rules.
-					</p>
+						<p class="experience-text">
+							&mdash; Between Aug 2022 and Mar 2023, I maintained, improved, and added new features to Cilia's legacy code, while also refactoring the frontend with VueJs. This involved learning TypeScript and SASS and componentizing the system in VueJs to improve component creation and align the application with business rules.
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Goiânia-GO, Brazil |
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
+							<a
+								class="link-icon"
+								rel="noopener"
+								href="https://cilia.com.br/"
+								target="_blank"
+								>Cilia Tecnologia
+							</a>
+						</p>
+					</div>
+
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Trabalhei com a equipe de frontend nas mais recentes features e releases de produtos e serviços da Cilia, além de colaborar com as equipes de Java, Ruby, QA, Design (UI/UX) e Integração:
+						</p>
+						<p class="experience-text">
+							&mdash; Manutenção e melhoria do código legado e aplicação de novas funcionalidades aos principais produtos da Cilia.
+						</p>
+						<p class="experience-text">
+							&mdash; Criação e implementação de diversos componentes para a nova versão de um dos produtos da empresa, construída inteiramente em VueJs, utilizando TypeScript, SASS, Bootstrap e bibliotecas como
+							<a
+								class="experience-text--link"
+								href="https://element-plus.org/en-US/"
+								rel="noopener"
+								target="_blank"
+								>
+								Element Plus
+							</a>
+							e
+							<a
+								class="experience-text--link"
+								href="https://fonts.google.com/icons?selected=Material+Icons"
+								rel="noopener"
+								target="_blank"
+								>
+								Material Icons
+							</a>
+							.
+						</p>
+						<p class="experience-text">
+							&mdash; Entre agosto de 2022 e março de 2023, mantive, melhorei e adicionei novos recursos ao código legado da Cilia, além de refatorar o frontend com VueJs. Isso envolveu aprender TypeScript e SASS e componentizar o sistema em VueJs para melhorar a criação de componentes e alinhar a aplicação com as regras de negócios.
+						</p>
 						<ion-icon class="icon" name="location-outline"></ion-icon>
 						<p class="icon-description">
 							Goiânia-GO, Brasil |
-							<img class="icon-link" src="icons/icon-link.svg" alt="link icon">
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
 							<a
 								class="link-icon"
 								rel="noopener"
@@ -250,10 +396,13 @@
 					</div>
 
 					<div class="career-title">
-						<h4 class="quaternary-heading">Franchise Owner</h4>
-						<span class="career-sub-heading">Jul 2018 &mdash; Oct 2022</span>
+						<h4 class="quaternary-heading language-eng">Franchise Owner</h4>
+						<span class="career-sub-heading language-eng">Jul 2018 &mdash; Oct 2022</span>
+
+						<h4 class="quaternary-heading language-ptbr">Franqueado</h4>
+						<span class="career-sub-heading language-ptbr">Jul 2018 &mdash; Out 2022</span>
 					</div>
-					<div class="career-text">
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Coordination of Administrative and Financial areas, H.R., inventory control, accounting documents control, analysis and decision making.
 						</p>
@@ -270,11 +419,31 @@
 						</p>
 					</div>
 
-					<div class="career-title">
-						<h4 class="quaternary-heading">Associate Consultant</h4>
-						<span class="career-sub-heading">Nov 2008 &mdash; Aug 2022</span>
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Coordenação das áreas Administrativa e Financeira, RH, controle de estoque, controle de documentos contábeis, análise e tomada de decisões.
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Goiânia-GO, Brasil |
+							<ion-icon class="icon-link" name="logo-instagram"></ion-icon>
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.instagram.com/kidstok.goiania/"
+								target="_blank"
+								>Kidstok Goiânia
+							</a>
+						</p>
 					</div>
-					<div class="career-text">
+
+					<div class="career-title">
+						<h4 class="quaternary-heading language-eng">Associate Consultant</h4>
+						<span class="career-sub-heading language-eng">Nov 2008 &mdash; Aug 2022</span>
+
+						<h4 class="quaternary-heading language-ptbr">Consultor Associado</h4>
+						<span class="career-sub-heading language-ptbr">Nov 2008 &mdash; Ago 2022</span>
+					</div>
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Focused on Strategic Planning, Analysis of Scenarios, Decision Making, Management and Leadership Skills, Development and Application of Processes, Development and Management of Teams.
 						</p>
@@ -291,11 +460,31 @@
 						</p>
 					</div>
 
-					<div class="career-title">
-						<h4 class="quaternary-heading">Franchise Owner</h4>
-						<span class="career-sub-heading">Sep 2011 &mdash; Sep 2021</span>
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Focado em Planejamento Estratégico, Análise de Cenários, Tomada de Decisões, Gestão e Liderança, Desenvolvimento e Aplicação de Processos, Desenvolvimento e Gestão de Equipes.
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Brasil |
+							<ion-icon class="icon-link" name="logo-linkedin"></ion-icon>
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.linkedin.com/company/miguelinaborges"
+								target="_blank"
+								>Miguelina Borges
+							</a>
+						</p>
 					</div>
-					<div class="career-text">
+
+					<div class="career-title">
+						<h4 class="quaternary-heading language-eng">Franchise Owner</h4>
+						<span class="career-sub-heading language-eng">Sep 2011 &mdash; Sep 2021</span>
+
+						<h4 class="quaternary-heading language-ptbr">Franqueado</h4>
+						<span class="career-sub-heading language-ptbr">Set 2011 &mdash; Set 2021</span>
+					</div>
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Coordination of Administrative and Financial areas, H.R., inventory control, accounting documents control, analysis and decision making.
 						</p>
@@ -312,17 +501,54 @@
 						</p>
 					</div>
 
-					<div class="career-title">
-						<h4 class="quaternary-heading">Financial and Administrative Manager</h4>
-						<span class="career-sub-heading">Mar 2017 &mdash; Feb 2020</span>
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Coordenação das áreas Administrativa e Financeira, RH, controle de estoque, controle de documentos contábeis, análise e tomada de decisões.
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Goiânia-GO, Brasil |
+							<ion-icon class="icon-link" name="logo-instagram"></ion-icon>
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.instagram.com/hope.goianiashopping/"
+								target="_blank"
+								>Hope Goiânia Shopping
+							</a>
+						</p>
 					</div>
-					<div class="career-text">
+
+					<div class="career-title">
+						<h4 class="quaternary-heading language-eng">Financial and Administrative Manager</h4>
+						<span class="career-sub-heading language-eng">Mar 2017 &mdash; Feb 2020</span>
+
+						<h4 class="quaternary-heading language-ptbr">Gestor Administrativo e Financeiro</h4>
+						<span class="career-sub-heading language-ptbr">Mar 2017 &mdash; Fev 2020</span>
+					</div>
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Management of the Administrative and Financial areas.
 						</p>
 						<ion-icon class="icon" name="location-outline"></ion-icon>
 						<p class="icon-description">
-							Brazil |
+							Goiânia-GO, Brazil |
+							<ion-icon class="icon-link" name="logo-linkedin"></ion-icon>
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.linkedin.com/company/miguelinaborges"
+								target="_blank"
+								>Miguelina Borges
+							</a>
+						</p>
+					</div>
+
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Gestão das áreas Administrativa e Financeira.
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Goiânia-GO, Brasil |
 							<ion-icon class="icon-link" name="logo-linkedin"></ion-icon>
 							<a
 								class="link-icon" rel="noopener"
@@ -334,17 +560,37 @@
 					</div>
 
 					<div class="career-title">
-						<h4 class="quaternary-heading">Internship</h4>
-						<span class="career-sub-heading">Oct 2003 &mdash; Feb 2007</span>
+						<h4 class="quaternary-heading language-eng">Internship</h4>
+						<span class="career-sub-heading language-eng">Oct 2003 &mdash; Feb 2007</span>
+
+						<h4 class="quaternary-heading language-ptbr">Estágio</h4>
+						<span class="career-sub-heading language-ptbr">Out 2003 &mdash; Fev 2007</span>
 					</div>
-					<div class="career-text">
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Junior analyst at Tegra Incorporadora (Former MB Engenharia), at Administrative and Financial Departments.
 						</p>
 						<ion-icon class="icon" name="location-outline"></ion-icon>
 						<p class="icon-description">
 							Goiânia-GO, Brazil |
-							<img class="icon-link" src="icons/icon-link.svg" alt="link icon">
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
+							<a
+								class="link-icon" rel="noopener"
+								href="http://tegraincorporadora.com.br"
+								target="_blank"
+								>Tegra Incorporadora
+							</a>
+						</p>
+					</div>
+
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Analista júnior na Tegra Incorporadora (ex-MB Engenharia), nas áreas Administrativa e Financeira.
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Goiânia-GO, Brasil |
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
 							<a
 								class="link-icon" rel="noopener"
 								href="http://tegraincorporadora.com.br"
@@ -357,22 +603,37 @@
 
 				<div class="container--small">
 					<hr />
-					<h3 class="tertiary-heading">Education</h3>
+					<h3 class="tertiary-heading language-eng">Education</h3>
+
+					<h3 class="tertiary-heading language-ptbr">Formação</h3>
 				</div>
 
 				<div class="education-box container--small grid grid--2--cols grid-row-small">
 					<div class="career-title">
 						<h4 class="quaternary-heading">Udemy, Inc</h4>
-						<span class="career-sub-heading">Oct 2022 &mdash; Present</span>
+						<span class="career-sub-heading language-eng">Oct 2022 &mdash; Present</span>
+
+						<span class="career-sub-heading language-ptbr">Out 2022 &mdash; Presente</span>
 					</div>
 					<div class="career-text">
 						<p class="experience-text">
 							Vue - The Complete Guide (incl. Router & Composition API)
 						</p>
 						<ion-icon class="icon" name="location-outline"></ion-icon>
-						<p class="icon-description">
+						<p class="icon-description language-eng">
 							Remote, Brazil |
-							<img class="icon-link" src="icons/icon-link.svg" alt="link icon">
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.udemy.com/course/vuejs-2-the-complete-guide/"
+								target="_blank"
+								>Udemy
+							</a>
+						</p>
+
+						<p class="icon-description language-ptbr">
+							Remoto, Brasil |
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
 							<a
 								class="link-icon" rel="noopener"
 								href="https://www.udemy.com/course/vuejs-2-the-complete-guide/"
@@ -384,15 +645,29 @@
 
 					<div class="career-title">
 						<h4 class="quaternary-heading">LinkedIn Learning</h4>
-						<span class="career-sub-heading">Jan 2023 &mdash; Present</span>
+						<span class="career-sub-heading language-eng">Jan 2023 &mdash; Present</span>
+
+						<span class="career-sub-heading language-ptbr">Jan 2023 &mdash; Presente</span>
 					</div>
 					<div class="career-text">
 						<p class="experience-text">
 							Vue Js 3 - Essential Training
 						</p>
 						<ion-icon class="icon" name="location-outline"></ion-icon>
-						<p class="icon-description">
+						<p class="icon-description language-eng">
 							Remote, Brazil |
+							<ion-icon class="icon-link" name="logo-linkedin"></ion-icon>
+							<a
+								class="link-icon"
+								rel="noopener"
+								href="https://www.linkedin.com/learning/vue-js-3-essential-training/conditional-data?autoplay=true"
+								target="_blank"
+								>LinkedIn Learning
+							</a>
+						</p>
+
+						<p class="icon-description language-ptbr">
+							Remoto, Brasil |
 							<ion-icon class="icon-link" name="logo-linkedin"></ion-icon>
 							<a
 								class="link-icon"
@@ -408,7 +683,7 @@
 						<h4 class="quaternary-heading">YouTube</h4>
 						<span class="career-sub-heading">Jan 2023</span>
 					</div>
-					<div class="career-text">
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Course &mdash; Vuex in Practice - with Composition API
 						</p>
@@ -425,11 +700,30 @@
 						</p>
 					</div>
 
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Curso &mdash; Vuex in Practice - with Composition API
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Remoto, Brasil |
+							<ion-icon class="icon-link" name="logo-youtube"></ion-icon>
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.youtube.com/watch?v=TQ9Z_4CZpQg&list=WL&index=8&t=2494s"
+								target="_blank"
+								>YouTube
+							</a>
+						</p>
+					</div>
+
 					<div class="career-title">
 						<h4 class="quaternary-heading">YouTube</h4>
-						<span class="career-sub-heading">Dec 2022</span>
+						<span class="career-sub-heading language-eng">Dec 2022</span>
+
+						<span class="career-sub-heading language-ptbr">Dez 2022</span>
 					</div>
-					<div class="career-text">
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Course &mdash; TypeScript in Practice
 						</p>
@@ -446,18 +740,48 @@
 						</p>
 					</div>
 
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Curso &mdash; TypeScript in Practice
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Remoto, Brasil |
+							<ion-icon class="icon-link" name="logo-youtube"></ion-icon>
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.youtube.com/watch?v=lCemyQeSCV8&list=WL&index=3&t=1357s"
+								target="_blank"
+								>YouTube
+							</a>
+						</p>
+					</div>
+
 					<div class="career-title">
 						<h4 class="quaternary-heading">Udemy, Inc</h4>
-						<span class="career-sub-heading">Dec 2021 &mdash; Dec 2022</span>
+						<span class="career-sub-heading language-eng">Dec 2021 &mdash; Dec 2022</span>
+
+						<span class="career-sub-heading language-ptbr">Dez 2021 &mdash; Dez 2022</span>
 					</div>
 					<div class="career-text">
 						<p class="experience-text">
 							The Complete JavaScript Course &mdash; From Zero to Expert
 						</p>
 						<ion-icon class="icon" name="location-outline"></ion-icon>
-						<p class="icon-description">
+						<p class="icon-description language-eng">
 							Remote, Brazil |
-							<img class="icon-link" src="icons/icon-link.svg" alt="link icon">
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.udemy.com/course/the-complete-javascript-course/"
+								target="_blank"
+								>Udemy
+							</a>
+						</p>
+
+						<p class="icon-description language-ptbr">
+							Remoto, Brasil |
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
 							<a
 								class="link-icon" rel="noopener"
 								href="https://www.udemy.com/course/the-complete-javascript-course/"
@@ -476,23 +800,36 @@
 							AWS Essentials Training
 						</p>
 						<ion-icon class="icon" name="location-outline"></ion-icon>
-						<p class="icon-description">
+						<p class="icon-description language-eng">
 							Goiânia-GO, Brazil |
-							<img class="icon-link" src="icons/icon-link.svg" alt="link icon">
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
 							<a
 								class="link-icon" rel="noopener"
 								href="https://cloudfaster.academy/curso/aws-essentials"
 								target="_blank"
-								>Udemy
+								>CloudFaster
+							</a>
+						</p>
+
+						<p class="icon-description language-ptbr">
+							Goiânia-GO, Brasil |
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
+							<a
+								class="link-icon" rel="noopener"
+								href="https://cloudfaster.academy/curso/aws-essentials"
+								target="_blank"
+								>CloudFaster
 							</a>
 						</p>
 					</div>
 
 					<div class="career-title">
 						<h4 class="quaternary-heading">YouTube</h4>
-						<span class="career-sub-heading">Aug 2022</span>
+						<span class="career-sub-heading language-eng">Aug 2022</span>
+
+						<span class="career-sub-heading language-ptbr">Ago 2022</span>
 					</div>
-					<div class="career-text">
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Course &mdash; VueJs 3
 						</p>
@@ -509,17 +846,47 @@
 						</p>
 					</div>
 
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Curso &mdash; VueJs 3
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Remoto, Brasil |
+							<ion-icon class="icon-link" name="logo-youtube"></ion-icon>
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.youtube.com/watch?v=wsAQQioPIJs&list=PLnDvRpP8BnezDglaAvtWgQXzsOmXUuRHL"
+								target="_blank"
+								>YouTube
+							</a>
+						</p>
+					</div>
+
 					<div class="career-title">
 						<h4 class="quaternary-heading">LinkedIn Learning</h4>
-						<span class="career-sub-heading">Aug 2022</span>
+						<span class="career-sub-heading language-eng">Aug 2022</span>
+
+						<span class="career-sub-heading language-ptbr">Ago 2022</span>
 					</div>
 					<div class="career-text">
 						<p class="experience-text">
 							Learning Git and GitHub
 						</p>
 						<ion-icon class="icon" name="location-outline"></ion-icon>
-						<p class="icon-description">
+						<p class="icon-description language-eng">
 							Remote, Brazil |
+							<ion-icon class="icon-link" name="logo-linkedin"></ion-icon>
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.linkedin.com/learning/learning-git-and-github-14213624/travel-the-multiverse-with-git-and-github?autoplay=true"
+								target="_blank"
+								>LinkedIn Learning
+							</a>
+						</p>
+
+						<p class="icon-description language-ptbr">
+							Remoto, Brasil |
 							<ion-icon class="icon-link" name="logo-linkedin"></ion-icon>
 							<a
 								class="link-icon" rel="noopener"
@@ -532,9 +899,11 @@
 
 					<div class="career-title">
 						<h4 class="quaternary-heading">LinkedIn Learning</h4>
-						<span class="career-sub-heading">Feb 2022 &mdash; Aug 2022</span>
+						<span class="career-sub-heading language-eng">Feb 2022 &mdash; Aug 2022</span>
+
+						<span class="career-sub-heading language-ptbr">Fev 2022 &mdash; Ago 2022</span>
 					</div>
-					<div class="career-text">
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Course &mdash; React.js Essential Training
 						</p>
@@ -551,11 +920,30 @@
 						</p>
 					</div>
 
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Curso &mdash; React.js Essential Training
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Remoto, Brasil |
+							<ion-icon class="icon-link" name="logo-linkedin"></ion-icon>
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Freact-js-essential-training%3Ftrk%3Dshare_ent_url%26shareId%3DjPj6sGzsStCK8B7DJD2XrA%253D%253D"
+								target="_blank"
+								>LinkedIn Learning
+							</a>
+						</p>
+					</div>
+
 					<div class="career-title">
 						<h4 class="quaternary-heading">LinkedIn Learning</h4>
-						<span class="career-sub-heading">Aug 2022</span>
+						<span class="career-sub-heading language-eng">Aug 2022</span>
+
+						<span class="career-sub-heading language-ptbr">Ago 2022</span>
 					</div>
-					<div class="career-text">
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Course &mdash; Agile Software Development: Scrum for Developers
 						</p>
@@ -572,18 +960,54 @@
 						</p>
 					</div>
 
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Curso &mdash; Agile Software Development: Scrum for Developers
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Remoto, Brasil |
+							<ion-icon class="icon-link" name="logo-linkedin"></ion-icon>
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.linkedin.com/learning/certificates/66d914dce4723402dbbe0eec667cd57765eae130ad948c2625ae742592b0a605"
+								target="_blank"
+								>LinkedIn Learning
+							</a>
+						</p>
+					</div>
+
 					<div class="career-title">
 						<h4 class="quaternary-heading">Udemy, Inc</h4>
-						<span class="career-sub-heading">Sep 2021 &mdash; Nov 2021</span>
+						<span class="career-sub-heading language-eng">Sep 2021 &mdash; Nov 2021</span>
+
+						<span class="career-sub-heading language-ptbr">Set 2021 &mdash; Nov 2021</span>
 					</div>
-					<div class="career-text">
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Course &mdash; Build Responsive Real World Websites with HTML and CSS
 						</p>
 						<ion-icon class="icon" name="location-outline"></ion-icon>
 						<p class="icon-description">
 							Remote, Brazil |
-							<img class="icon-link" src="icons/icon-link.svg" alt="link icon">
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"
+								target="_blank"
+								>Udemy
+							</a>
+						</p>
+					</div>
+
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Curso &mdash; Build Responsive Real World Websites with HTML and CSS
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Remoto, Brasil |
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
 							<a
 								class="link-icon" rel="noopener"
 								href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"
@@ -595,16 +1019,35 @@
 
 					<div class="career-title">
 						<h4 class="quaternary-heading">Rocketseat</h4>
-						<span class="career-sub-heading">Sep 2021 &mdash; Oct 2021</span>
+						<span class="career-sub-heading language-eng">Sep 2021 &mdash; Oct 2021</span>
+
+						<span class="career-sub-heading language-ptbr">Set 2021 &mdash; Out 2021</span>
 					</div>
-					<div class="career-text">
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Discover Course &mdash; The programming fundamentals. HTML and CSS guides
 						</p>
 						<ion-icon class="icon" name="location-outline"></ion-icon>
 						<p class="icon-description">
 							Remote, Brazil |
-							<img class="icon-link" src="icons/icon-link.svg" alt="link icon">
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
+							<a
+								class="link-icon" rel="noopener"
+								href="https://www.rocketseat.com.br/discover"
+								target="_blank"
+								>Rocketseat
+							</a>
+						</p>
+					</div>
+
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Curso Discover &mdash; Fundamentos da programação. Guias de HTML e CSS
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Remoto, Brasil |
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
 							<a
 								class="link-icon" rel="noopener"
 								href="https://www.rocketseat.com.br/discover"
@@ -618,14 +1061,14 @@
 						<h4 class="quaternary-heading">Invisible College</h4>
 						<span class="career-sub-heading">Jun 2021 &mdash; Jul 2021</span>
 					</div>
-					<div class="career-text">
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Course &mdash; Call to Action - Christian ethics applied to marketing and communication
 						</p>
 						<ion-icon class="icon" name="location-outline"></ion-icon>
 						<p class="icon-description">
 							Goiânia-GO, Brazil |
-							<img class="icon-link" src="icons/icon-link.svg" alt="link icon">
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
 							<a
 								class="link-icon" rel="noopener"
 								href="https://theinvisiblecollege.com.br/cursos/"
@@ -635,18 +1078,57 @@
 						</p>
 					</div>
 
-					<div class="career-title">
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Curso &mdash; Call to Action - A ética cristã aplicada ao marketing e à comunicação
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Goiânia-GO, Brasil |
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
+							<a
+								class="link-icon" rel="noopener"
+								href="https://theinvisiblecollege.com.br/cursos/"
+								target="_blank"
+								>InC
+							</a>
+						</p>
+					</div>
+
+					<div class="career-title language-eng">
 						<h4 class="quaternary-heading">Salgado de Oliveira University</h4>
 						<span class="career-sub-heading">Jan 2003 &mdash; Dec 2008</span>
 					</div>
-					<div class="career-text">
+
+					<div class="career-title language-ptbr">
+						<h4 class="quaternary-heading">Universidade Salgado de Oliveira</h4>
+						<span class="career-sub-heading">Jan 2003 &mdash; Dez 2008</span>
+					</div>
+					<div class="career-text language-eng">
 						<p class="experience-text">
 							Bachelor in Business Administration
 						</p>
 						<ion-icon class="icon" name="location-outline"></ion-icon>
 						<p class="icon-description">
 							Goiânia-GO, Brazil |
-							<img class="icon-link" src="icons/icon-link.svg" alt="link icon">
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
+							<a
+								class="link-icon" rel="noopener"
+								href="https://universo.edu.br/"
+								target="_blank"
+								>Universo
+							</a>
+						</p>
+					</div>
+
+					<div class="career-text language-ptbr">
+						<p class="experience-text">
+							Bacharelado em Administração de Empresas
+						</p>
+						<ion-icon class="icon" name="location-outline"></ion-icon>
+						<p class="icon-description">
+							Goiânia-GO, Brasil |
+							<img class="icon-link" src="icons/link.svg" alt="link icon">
 							<a
 								class="link-icon" rel="noopener"
 								href="https://universo.edu.br/"
@@ -660,9 +1142,14 @@
 			</section>
 
 			<section class="section-portfolio" id="portfolio">
-				<div class="container">
+				<div class="container language-eng">
 					<h2 class="heading-secondary margin-bottom-small">My Work</h2>
 					<p class="work-text">Here are some of my most recent projects.</p>
+				</div>
+
+				<div class="container language-ptbr">
+					<h2 class="heading-secondary margin-bottom-small">Meu Trabalho</h2>
+					<p class="work-text">Aqui estão alguns dos meus projetos mais recentes.</p>
 				</div>
 
 				<div class="container grid--4--cols">
@@ -676,7 +1163,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -687,9 +1174,9 @@
 									>My Pokedex
 								</a>
 							</p>
-							<p class="work-languages">∞ VueJs ∞</p>
-							<p class="work-languages">∞ JavaScript ∞</p>
-							<p class="work-languages">∞ SASS ∞</p>
+							<p class="work-languages">∞ VueJs</p>
+							<p class="work-languages">∞ JavaScript</p>
+							<p class="work-languages">∞ SASS</p>
 						</div>
 					</div>
 
@@ -703,7 +1190,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -714,9 +1201,9 @@
 									>Habit Tracker
 								</a>
 							</p>
-							<p class="work-languages">∞ ReactJs ∞</p>
-							<p class="work-languages">∞ TypeScript ∞</p>
-							<p class="work-languages">∞ Tailwind CSS ∞</p>
+							<p class="work-languages">∞ ReactJs</p>
+							<p class="work-languages">∞ TypeScript</p>
+							<p class="work-languages">∞ Tailwind CSS</p>
 						</div>
 					</div>
 
@@ -730,7 +1217,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -741,9 +1228,9 @@
 									>GitHub User Finder
 								</a>
 							</p>
-							<p class="work-languages">∞ ReactJs ∞</p>
-							<p class="work-languages">∞ TypeScript ∞</p>
-							<p class="work-languages">∞ CSS Modules ∞</p>
+							<p class="work-languages">∞ ReactJs</p>
+							<p class="work-languages">∞ TypeScript</p>
+							<p class="work-languages">∞ CSS Modules</p>
 						</div>
 					</div>
 
@@ -757,7 +1244,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -768,9 +1255,9 @@
 									>Make Your Hotdog
 								</a>
 							</p>
-							<p class="work-languages">∞ VueJs 3 ∞</p>
-							<p class="work-languages">∞ JavaScript ∞</p>
-							<p class="work-languages">∞ NodeJs ∞</p>
+							<p class="work-languages">∞ VueJs 3</p>
+							<p class="work-languages">∞ JavaScript</p>
+							<p class="work-languages">∞ NodeJs</p>
 						</div>
 					</div>
 
@@ -784,7 +1271,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -795,9 +1282,9 @@
 									>Dev Music Player
 								</a>
 							</p>
-							<p class="work-languages">∞ VueJs 3 ∞</p>
-							<p class="work-languages">∞ TypeScript ∞</p>
-							<p class="work-languages">∞ CSS ∞</p>
+							<p class="work-languages">∞ VueJs 3</p>
+							<p class="work-languages">∞ TypeScript</p>
+							<p class="work-languages">∞ CSS</p>
 						</div>
 					</div>
 
@@ -811,7 +1298,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -822,9 +1309,9 @@
 									>LinkTree Thiago Fagundes
 								</a>
 							</p>
-							<p class="work-languages">∞ JavaScript ∞</p>
-							<p class="work-languages">∞ HTML ∞</p>
-							<p class="work-languages">∞ CSS ∞</p>
+							<p class="work-languages">∞ JavaScript</p>
+							<p class="work-languages">∞ HTML</p>
+							<p class="work-languages">∞ CSS</p>
 						</div>
 					</div>
 
@@ -838,7 +1325,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -849,9 +1336,9 @@
 									>LinkTree Tha Cintra
 								</a>
 							</p>
-							<p class="work-languages">∞ JavaScript ∞</p>
-							<p class="work-languages">∞ HTML ∞</p>
-							<p class="work-languages">∞ CSS ∞</p>
+							<p class="work-languages">∞ JavaScript</p>
+							<p class="work-languages">∞ HTML</p>
+							<p class="work-languages">∞ CSS</p>
 						</div>
 					</div>
 
@@ -865,7 +1352,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -876,9 +1363,9 @@
 									>LinkTree Aurelio
 								</a>
 							</p>
-							<p class="work-languages">∞ JavaScript ∞</p>
-							<p class="work-languages">∞ HTML ∞</p>
-							<p class="work-languages">∞ CSS ∞</p>
+							<p class="work-languages">∞ JavaScript</p>
+							<p class="work-languages">∞ HTML</p>
+							<p class="work-languages">∞ CSS</p>
 						</div>
 					</div>
 
@@ -892,7 +1379,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -903,9 +1390,9 @@
 									>Omnifood Project
 								</a>
 							</p>
-							<p class="work-languages">∞ JavaScript ∞</p>
-							<p class="work-languages">∞ HTML ∞</p>
-							<p class="work-languages">∞ CSS ∞</p>
+							<p class="work-languages">∞ JavaScript</p>
+							<p class="work-languages">∞ HTML</p>
+							<p class="work-languages">∞ CSS</p>
 						</div>
 					</div>
 
@@ -919,7 +1406,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -930,9 +1417,9 @@
 									>Jogo do Destino
 								</a>
 							</p>
-							<p class="work-languages">∞ JavaScript ∞</p>
-							<p class="work-languages">∞ HTML ∞</p>
-							<p class="work-languages">∞ CSS ∞</p>
+							<p class="work-languages">∞ JavaScript</p>
+							<p class="work-languages">∞ HTML</p>
+							<p class="work-languages">∞ CSS</p>
 						</div>
 					</div>
 
@@ -946,7 +1433,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -957,9 +1444,9 @@
 									>Guess the Number
 								</a>
 							</p>
-							<p class="work-languages">∞ JavaScript ∞</p>
-							<p class="work-languages">∞ HTML ∞</p>
-							<p class="work-languages">∞ CSS ∞</p>
+							<p class="work-languages">∞ JavaScript</p>
+							<p class="work-languages">∞ HTML</p>
+							<p class="work-languages">∞ CSS</p>
 						</div>
 					</div>
 
@@ -973,7 +1460,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -984,9 +1471,9 @@
 									>Acerte o Número
 								</a>
 							</p>
-							<p class="work-languages">∞ JavaScript ∞</p>
-							<p class="work-languages">∞ HTML ∞</p>
-							<p class="work-languages">∞ CSS ∞</p>
+							<p class="work-languages">∞ JavaScript</p>
+							<p class="work-languages">∞ HTML</p>
+							<p class="work-languages">∞ CSS</p>
 						</div>
 					</div>
 
@@ -1000,7 +1487,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -1011,9 +1498,9 @@
 									>Landing Page 1.1
 								</a>
 							</p>
-							<p class="work-languages">∞ HTML ∞</p>
-							<p class="work-languages">∞ CSS ∞</p>
-							<p class="work-languages">∞ ∞</p>
+							<p class="work-languages">∞ HTML</p>
+							<p class="work-languages">∞ CSS</p>
+							<p class="work-languages"></p>
 						</div>
 					</div>
 
@@ -1027,7 +1514,7 @@
 							<p class="icon-description">
 								<img
 									class="icon-link"
-									src="icons/icon-link.svg"
+									src="icons/link.svg"
 									alt="link icon"
 								>
 								<a
@@ -1038,9 +1525,9 @@
 									>Landing Page 1.0
 								</a>
 							</p>
-							<p class="work-languages">∞ HTML ∞</p>
-							<p class="work-languages">∞ CSS ∞</p>
-							<p class="work-languages">∞ ∞</p>
+							<p class="work-languages">∞ HTML</p>
+							<p class="work-languages">∞ CSS</p>
+							<p class="work-languages"></p>
 						</div>
 					</div>
 				</div>
@@ -1048,23 +1535,34 @@
 
 			<section class="section-contact" id="contact">
 				<div>
-					<h2 class="heading-secondary center-text">Contact</h2>
+					<h2 class="heading-secondary center-text language-eng">Contact</h2>
+
+					<h2 class="heading-secondary center-text language-ptbr">Contato</h2>
 				</div>
 
 				<div class="contact-info container--small grid--footer grid--3--cols">
-					<div class="contact-col">
+					<div class="contact--col">
 						<a href="#" rel="noopener">
 							<img class="logo" src="img/logo.png" alt="Aurelio Borges logo" />
 						</a>
 						<p class="contact-text">
 							<ion-icon class="contact-icon" name="map-outline"></ion-icon>
 							<a
-								class="link-icon contact-link-icon"
+								class="link-icon contact-link-icon language-eng"
 								rel="noopener"
 								href="https://goo.gl/maps/agv6mBb3iK28ynmX7"
 								target="_blank"
 							>
 								Goiânia-GO | Brazil
+							</a>
+
+							<a
+								class="link-icon contact-link-icon language-ptbr"
+								rel="noopener"
+								href="https://goo.gl/maps/agv6mBb3iK28ynmX7"
+								target="_blank"
+							>
+								Goiânia-GO | Brasil
 							</a>
 						</p>
 					</div>
@@ -1094,7 +1592,7 @@
 
 					<div class="contact--col">
 						<p class="social-heading">Social</p>
-						<ul class="social-icon">
+						<ul class="social-icon-list">
 							<li>
 								<a
 									class="link-icon contact-link-icon"
@@ -1102,7 +1600,7 @@
 									href="https://www.linkedin.com/in/aurelioaborges/"
 									target="-blank"
 								>
-									<ion-icon class="contact-icon" name="logo-linkedin"></ion-icon>
+									<ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
 								</a>
 							</li>
 							<li>
@@ -1112,7 +1610,7 @@
 									href="https://github.com/aureliojoseph"
 									target="-blank"
 								>
-									<ion-icon class="contact-icon" name="logo-github"></ion-icon>
+									<ion-icon class="social-icon" name="logo-github"></ion-icon>
 								</a>
 							</li>
 							<li>
@@ -1122,7 +1620,7 @@
 									href="https://www.instagram.com/aureliojoseph/"
 									target="-blank"
 								>
-									<ion-icon class="contact-icon" name="logo-instagram"></ion-icon>
+									<ion-icon class="social-icon" name="logo-instagram"></ion-icon>
 								</a>
 							</li>
 						</ul>

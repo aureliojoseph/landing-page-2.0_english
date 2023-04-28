@@ -1,15 +1,30 @@
-console.log("Hello World!");
+///////////////////////////////////////////////////////////
+// Language Mode
+// const engLanguageMode = document.querySelector(".language-eng");
+// const ptbrLanguageMode = document.querySelector(".language-ptbr");
+
+// const toggleLanguageMode = document.querySelector("#toggle-translate-mode");
+// toggleLanguageMode.addEventListener('click', toggleTranslateMode)
+
+// function toggleTranslateMode () {
+//   console.log('click');
+//   if (ptbrLanguageMode.style.display === "none") {
+//     // engLanguageMode.style.display = "none";
+//     ptbrLanguageMode.style.display = "block";
+//   } else {
+//     // engLanguageMode.style.display = "block";
+//     ptbrLanguageMode.style.display = "none !important";
+//   }
+// }
 
 ///////////////////////////////////////////////////////////
-// Set Current Year
-
+// Current Year
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
 ///////////////////////////////////////////////////////////
-// Make Mobile Navigation Work
-
+// Mobile Navigation
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const mainHeaderEl = document.querySelector(".header");
 
@@ -19,7 +34,6 @@ btnNavEl.addEventListener("click", function () {
 
 ///////////////////////////////////////////////////////////
 // SMOOTH SCROLLING ANIMATION
-
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
@@ -48,34 +62,32 @@ allLinks.forEach(function (link) {
 
 ///////////////////////////////////////////////////////////
 // Sticky Navigation
+// const sectionHeroEl = document.querySelector(".section-hero");
 
-const sectionHeroEl = document.querySelector(".section-hero");
+// const obs = new IntersectionObserver(
+//   function (entries) {
+//     const ent = entries[0];
+//     console.log(ent);
 
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-    console.log(ent);
+//     if (ent.isIntersecting === false) {
+//       document.body.classList.add("sticky");
+//     }
 
-    if (ent.isIntersecting === false) {
-      document.body.classList.add("sticky");
-    }
-
-    if (ent.isIntersecting === true) {
-      document.body.classList.remove("sticky");
-    }
-  },
-  {
-    // In the Viewport
-    root: null,
-    threshold: 0,
-    rootMargin: "-80px",
-  }
-);
-obs.observe(sectionHeroEl);
+//     if (ent.isIntersecting === true) {
+//       document.body.classList.remove("sticky");
+//     }
+//   },
+//   {
+//     // In the Viewport
+//     root: null,
+//     threshold: 0,
+//     rootMargin: "-80px",
+//   }
+// );
+// obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
-
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
@@ -88,7 +100,6 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }

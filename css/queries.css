@@ -1,4 +1,4 @@
-/* 
+/*
 - rem and em DO NOT depend on html font-size in media queries -
 
 - in media queries --> 1rem = 1em = 16px -
@@ -197,7 +197,6 @@
     grid-template-columns: 1fr;
   }
 
-  .contact-col,
   .contact--col {
     align-items: center;
   }
@@ -239,7 +238,6 @@
     padding: 4.8rem;
   }
 
-  .contact-col,
   .contact--col {
     gap: 1.6rem;
   }
