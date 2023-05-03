@@ -1,21 +1,29 @@
 ///////////////////////////////////////////////////////////
+// Dark/Light Mode button
+function toggleDarkMode() {
+  const html = document.documentElement
+  html.classList.toggle('light')
+}
+
+///////////////////////////////////////////////////////////
 // Language Mode
-// const engLanguageMode = document.querySelector(".language-eng");
-// const ptbrLanguageMode = document.querySelector(".language-ptbr");
+const langBtn = document.querySelector('#lang-btn');
+const translateElements = document.querySelectorAll('.translate');
 
-// const toggleLanguageMode = document.querySelector("#toggle-translate-mode");
-// toggleLanguageMode.addEventListener('click', toggleTranslateMode)
+fetch('./translations.json')
+  .then(response => response.json())
+  .then(data => {
+    let currentLang = 'en';
 
-// function toggleTranslateMode () {
-//   console.log('click');
-//   if (ptbrLanguageMode.style.display === "none") {
-//     // engLanguageMode.style.display = "none";
-//     ptbrLanguageMode.style.display = "block";
-//   } else {
-//     // engLanguageMode.style.display = "block";
-//     ptbrLanguageMode.style.display = "none !important";
-//   }
-// }
+    langBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'pt' : 'en';
+
+      translateElements.forEach(element => {
+        const key = element.dataset.translationKey;
+        element.textContent = data[currentLang][key];
+      });
+    });
+  });
 
 ///////////////////////////////////////////////////////////
 // Current Year
@@ -33,12 +41,11 @@ btnNavEl.addEventListener("click", function () {
 });
 
 ///////////////////////////////////////////////////////////
-// SMOOTH SCROLLING ANIMATION
+// Smooth Scrolling Animation
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    // e.preventDefault();
     const href = link.getAttribute("href");
 
     // Scroll back to top
@@ -62,29 +69,27 @@ allLinks.forEach(function (link) {
 
 ///////////////////////////////////////////////////////////
 // Sticky Navigation
-// const sectionHeroEl = document.querySelector(".section-hero");
+const sectionHeroEl = document.querySelector(".section-hero");
 
-// const obs = new IntersectionObserver(
-//   function (entries) {
-//     const ent = entries[0];
-//     console.log(ent);
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
 
-//     if (ent.isIntersecting === false) {
-//       document.body.classList.add("sticky");
-//     }
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky-border");
+    }
 
-//     if (ent.isIntersecting === true) {
-//       document.body.classList.remove("sticky");
-//     }
-//   },
-//   {
-//     // In the Viewport
-//     root: null,
-//     threshold: 0,
-//     rootMargin: "-80px",
-//   }
-// );
-// obs.observe(sectionHeroEl);
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky-border");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-60px",
+  }
+);
+obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions

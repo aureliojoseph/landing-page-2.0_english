@@ -1,33 +1,61 @@
 :root {
   --text-primary: #f1f3f5;
   --text-secondary: #e9ecef;
-  --text-tertiary: #dee2e6;
-  --text-quaternary: #ced4da;
-  --text-sub-heading: #adb5bd;
+  --text-sub-heading: #82ccdd;
   --text-color: #f8f9fa;
   --text-color-hover: #ffffff;
-  --text-color-work-languages: #212529;
+  --text-color-work-languages: #ebebeb;
 
-  --btn-text-color: #373737;
-  --btn-bg-color: #f9f9f9;
-  --btn-bg-color-hover: #adb5bd;
+  --btn-text-color: #212529;
+  --btn-bg-color: #82ccdd;
+  --btn-bg-color-hover: #75b8c7;
 
   --btn-sec-text-color: #f8f9fa;
   --btn-sec-bg-color: #1e2125;
   --btn-sec-bg-color-hover: #373b3e;
 
-  --link-text-color: #a6a8a9;
+  --link-text-color: #82ccdd;
+  --icon-link-url: url(../icons/link.svg);
 
   --bg-color-1: #212529;
   --bg-color-2: #373b3e;
-  --bg-color-work-content: #ced4da;
-  --bg-color-hover: #909294;
+  --bg-color-work-content: #495057;
+  --bg-color-hover: #4d5154;
 
   --border-color: rgba(248, 249, 250, 0.4);
+  --border-image-color: #41666f;
 
   --switch-mode-url: url(../icons/sun-icon.svg);
 
-  --translate-mode-url: url(../icons/translate-bold.svg);
+  --translate-mode-url: url(../icons/dark-translate.svg);
+}
+
+.light {
+  --text-primary: #343a40;
+  --text-secondary: #495057;
+  --text-sub-heading: #0b7285;
+  --text-color: rgb(33, 37, 41);
+  --text-color-hover: #000000;
+  --text-color-work-languages: #2f2f2f;
+
+  --btn-sec-text-color: #212529;
+  --btn-sec-bg-color: #f9fafb;
+  --btn-sec-bg-color-hover: #dfe0e16b;
+
+  --link-text-color: #68a3b1;
+  --icon-link-url: url(../icons/link-light.svg);
+
+  --bg-color-1: rgb(248, 249, 250);
+  --bg-color-2: #23272f1a;
+  --bg-color-work-content: #DEE2E6;
+  --bg-color-hover: #c6c7c8;
+
+  --border-color: rgba(35, 39, 47, 0.1);
+  --border-image-color: #0b7285;
+
+  --switch-mode-url: url(../icons/moon-icon.svg);
+
+  --translate-mode-url: url(../icons/light-translate.svg);
 }
 
 /* HEADINGS */
@@ -46,14 +74,14 @@
 }
 
 .heading-secondary {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
 
 .heading-tertiary {
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
@@ -151,6 +179,7 @@
   width: 8rem;
   height: 4rem;
   border-radius: 99999px;
+  box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.35);
   cursor: pointer;
 }
 
@@ -169,7 +198,7 @@
   display: inline-block;
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--text-color);
   padding: 0.6rem 1.2rem;
   line-height: 3rem;
@@ -212,6 +241,9 @@
   padding-top: 0;
   padding-bottom: 0;
   z-index: 999;
+}
+
+.sticky-border .header {
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -230,8 +262,6 @@
 .switch-mode,
 .translate-mode {
   cursor: pointer;
-  width: 32px;
-  height: 32px;
   border: 0;
   padding: 2.2rem;
   border-radius: 99999px;
@@ -265,7 +295,7 @@
 .hero-img {
   width: 75%;
   border-radius: 50%;
-  border: 3px solid #909294;
+  border: 3px solid var(--border-image-color);
 }
 
 /*****************************/
@@ -316,26 +346,26 @@ hr {
 }
 
 .secondary-heading {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 4.4rem;
   margin-bottom: 3.2rem;
 }
 
 .tertiary-heading {
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
   font-size: 3rem;
   margin-bottom: 3.2rem;
 }
 
 .quaternary-heading {
-  color: var(--text-quaternary);
+  color: var(--text-color);
   font-size: 1.8rem;
   line-height: 1.6;
 }
 
 .career-sub-heading {
-  color: var(--text-sub-heading);
-  font-size: 1.6rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
 }
 
 .career-text {
@@ -354,9 +384,10 @@ hr {
   line-height: 1.8;
 }
 
-.icon-description {
+.icon-description,
+.link-icon {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 0.8rem;
 }
@@ -401,14 +432,14 @@ hr {
 
 .work-content {
   padding: 1.2rem 3.2rem;
-  background-color: #373737;
+  background-color: var(--bg-color-work-content);
   display: flex;
   flex-direction: column;
 }
 
 .work-languages {
   font-size: 1.3rem;
-  color: #ebebeb;
+  color: var(--text-secondary);
 }
 
 /*****************************/
@@ -483,13 +514,4 @@ hr {
 .footer-text {
   font-size: 1.4rem;
   color: var(--text-secondary);
-}
-
-/* LANGUAGUE MODE */
-.language-eng {
-  display: block;
-}
-
-.language-ptbr {
-  display: none;
 }
