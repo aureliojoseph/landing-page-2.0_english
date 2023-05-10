@@ -40,12 +40,12 @@
 
   --btn-sec-text-color: #212529;
   --btn-sec-bg-color: #f9fafb;
-  --btn-sec-bg-color-hover: #dfe0e16b;
+  --btn-sec-bg-color-hover: rgba(223, 224, 225, 0.42);
 
   --link-text-color: #68a3b1;
   --icon-link-url: url(../icons/link-light.svg);
 
-  --bg-color-1: rgb(248, 249, 250);
+  --bg-color-1: #f8f9fa;
   --bg-color-2: #23272f1a;
   --bg-color-work-content: #DEE2E6;
   --bg-color-hover: #c6c7c8;
