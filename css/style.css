@@ -8,7 +8,8 @@
 
   --btn-text-color: #212529;
   --btn-bg-color: #82ccdd;
-  --btn-bg-color-hover: #75b8c7;
+  --btn-text-color-hover: #000;
+  --btn-bg-color-hover: #68a3b1;
 
   --btn-sec-text-color: #f8f9fa;
   --btn-sec-bg-color: #1e2125;
@@ -71,14 +72,14 @@
 
 .heading-prime {
   color: var(--text-primary);
-  font-size: 4.8rem;
+  font-size: 6.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
 }
 
 .heading-secondary {
   color: var(--text-primary);
-  font-size: 4.4rem;
+  font-size: 5.2rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
@@ -94,9 +95,9 @@
   display: block;
   color: var(--text-sub-heading);
   font-weight: 600;
-  font-size: 2.6rem;
+  font-size: 3.6rem;
   letter-spacing: 0.75px;
-  margin-bottom: 2.4rem;
+  /* margin-bottom: 2.4rem; */
 }
 
 /***************************************/
@@ -125,6 +126,7 @@
 .btn-prime:hover,
 .btn-prime:active {
   background-color: var(--btn-bg-color-hover);
+  color: var(--btn-text-color-hover);
 }
 
 .btn-sec:link,
