@@ -178,6 +178,11 @@
     justify-items: center;
   }
 
+  .career-text--link,
+  .career-text--date {
+    justify-content: center;
+  }
+
   .section-contact {
     padding: 4.8rem;
   }

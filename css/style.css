@@ -432,6 +432,26 @@ hr {
   padding: 0 0 3rem 1.5rem;
 }
 
+.career-text--link,
+.career-text--date {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 10px;
+}
+
+.career-text--link a {
+  margin: 0;
+}
+
+.career-text--date {
+  padding-bottom: 3rem;
+}
+
+.career-text--date .icon-description {
+  margin: 0;
+}
+
 .experience-text,
 .icon-description,
 .icon,
